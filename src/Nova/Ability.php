@@ -136,7 +136,7 @@ class Ability extends Resource
                 ->sortable()
                 ->showOnPreview(),
 
-            MorphedByMany::make('Roles')
+            MorphedByMany::make('Roles', 'roles', 'Yadahan\BouncerTool\Nova\Role')
                 ->fields(new PermissionsFields),
         ];
     }
